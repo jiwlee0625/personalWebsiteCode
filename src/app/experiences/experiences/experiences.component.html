@@ -1,0 +1,23 @@
+<div id="experiencesSection" class="sectionClass">
+	<div id = "experiencesContent">
+		<h1 id = "experiencesSectionTitle" class="sectionTitle">Experience</h1>
+		<div id="experiencesTableSection">
+			<table datatable [dtOptions]="dtOptions" id="workTable" class="row-border hover">
+				<thead>
+				  <tr>
+				    <th>Title</th>
+				    <th>Type</th>
+				    <th>Skills</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr *ngFor="let experience of experiences" (click)="rowClicker(experience)">
+				    <td>{{ experience.title }}<span *ngIf="experience.subTitle">: {{ experience.subTitle }}</span></td>
+				    <td>{{ experience.classification }}</td>
+				    <td>{{ experience.skills }}</td>
+				  </tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

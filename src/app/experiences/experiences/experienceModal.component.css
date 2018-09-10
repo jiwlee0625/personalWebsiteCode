@@ -1,0 +1,11 @@
+.rowSubTitle, .rowStatus {display: inline;}
+
+#linkButton {
+	border-color: #35d663;
+	background-color: white; /* Green */
+    color: #35d663;
+}
+#linkButton:hover {
+	background-color: #35d663; /* Green */
+    color: white;
+}
